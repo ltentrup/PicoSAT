@@ -6,7 +6,7 @@ public class PicoSAT: SATSolver {
     
     let picosat: OpaquePointer
     
-    public init() {
+    public required init() {
         picosat = picosat_init()
     }
     
