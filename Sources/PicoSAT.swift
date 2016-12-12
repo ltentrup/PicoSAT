@@ -51,5 +51,8 @@ public class PicoSAT: SATSolver {
     public func failed(literal: Literal) -> Bool {
         return picosat_failed_assumption(picosat, literal) > 0
     }
-
+    
+    public func print() {
+        picosat_print(picosat, stdout)
+    }
 }
