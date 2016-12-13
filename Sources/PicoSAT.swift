@@ -10,6 +10,10 @@ public class PicoSAT: SATSolver {
         picosat = picosat_init()
     }
     
+    public var maxVar: Literal {
+        return picosat_variables(picosat)
+    }
+    
     deinit {
         picosat_reset(picosat)
     }
@@ -19,7 +23,7 @@ public class PicoSAT: SATSolver {
     }
 
     public func add(literal: Literal) {
-        picosat_add(picosat, Int32(literal))
+        picosat_add(picosat, literal)
     }
     
     public func assume(literal: Literal) {
