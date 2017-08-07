@@ -7,6 +7,6 @@ let package = Package(
         Target(name: "CPicoSAT")
     ],
     dependencies: [
-        .Package(url: "../SATSolver", majorVersion: 0, minor: 4)
+        .Package(url: "../SATSolver", majorVersion: 0, minor: 1)
     ]
 )
