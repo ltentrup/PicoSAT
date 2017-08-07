@@ -7,6 +7,6 @@ let package = Package(
         Target(name: "CPicoSAT")
     ],
     dependencies: [
-        .Package(url: "../SATSolver", majorVersion: 0, minor: 1)
+        .Package(url: "https://github.com/ltentrup/SATSolver.git", majorVersion: 0, minor: 1)
     ]
 )
